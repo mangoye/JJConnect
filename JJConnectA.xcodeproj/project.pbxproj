@@ -12,8 +12,8 @@
 		EA3119D81C079A8F008299E5 /* heart-full.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3119D61C079A8F008299E5 /* heart-full.png */; };
 		EA3119DF1C07A264008299E5 /* image-post.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA3119DD1C07A264008299E5 /* image-post.jpg */; };
 		EA3119E01C07A264008299E5 /* pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA3119DE1C07A264008299E5 /* pic.jpg */; };
-		EA3119E21C07AA1F008299E5 /* FeedVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3119E11C07AA1F008299E5 /* FeedVCViewController.swift */; };
 		EA3119E61C07AD6F008299E5 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3119E51C07AD6F008299E5 /* PostCell.swift */; };
+		EA3119E81C07C513008299E5 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3119E71C07C513008299E5 /* FeedVC.swift */; };
 		EA6F067F1C063B1200763147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F067E1C063B1200763147 /* AppDelegate.swift */; };
 		EA6F06811C063B1200763147 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F06801C063B1200763147 /* ViewController.swift */; };
 		EA6F06841C063B1200763147 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06821C063B1200763147 /* Main.storyboard */; };
@@ -69,8 +69,8 @@
 		EA3119D61C079A8F008299E5 /* heart-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart-full.png"; sourceTree = "<group>"; };
 		EA3119DD1C07A264008299E5 /* image-post.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image-post.jpg"; sourceTree = "<group>"; };
 		EA3119DE1C07A264008299E5 /* pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic.jpg; sourceTree = "<group>"; };
-		EA3119E11C07AA1F008299E5 /* FeedVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVCViewController.swift; sourceTree = "<group>"; };
 		EA3119E51C07AD6F008299E5 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		EA3119E71C07C513008299E5 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		EA6F067B1C063B1200763147 /* JJConnectA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJConnectA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6F067E1C063B1200763147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA6F06801C063B1200763147 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -235,7 +235,7 @@
 		EA6F06AD1C063B8100763147 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EA3119E11C07AA1F008299E5 /* FeedVCViewController.swift */,
+				EA3119E71C07C513008299E5 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -554,7 +554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA6F07021C0751AA00763147 /* MaterialTextField.swift in Sources */,
-				EA3119E21C07AA1F008299E5 /* FeedVCViewController.swift in Sources */,
+				EA3119E81C07C513008299E5 /* FeedVC.swift in Sources */,
 				EAC255A01C076EAF0077EC11 /* DataService.swift in Sources */,
 				EA6F06FB1C07422C00763147 /* MaterialView.swift in Sources */,
 				EA6F06811C063B1200763147 /* ViewController.swift in Sources */,
