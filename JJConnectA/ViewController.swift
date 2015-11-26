@@ -36,6 +36,8 @@ class ViewController: UIViewController {
 
     @IBAction func fbBtnPressed(sender:UIButton!) {
        let facebookLogin = FBSDKLoginManager()
+
+        
         facebookLogin.logInWithReadPermissions(["email"]) { (facebookResult: FBSDKLoginManagerLoginResult!, facebookError: NSError!) -> Void in
             if facebookError != nil {
                 print("Facebook login failed. Error \(facebookError)")
@@ -57,11 +59,22 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func attemptLogin(sender:UIButton!) {
-        if let email = emailField.text where email !="", let pwd = passwordField.text where pwd !="" {
-           // do something strange not implemented yet
+    
+    
+    @IBAction func attemptLogin(sender: UIButton!) {
+        
+        if let pwd = passwordField?.text, let email = emailField?.text {
+            
+            DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: {error, authData in
+                
+                if error != nil {
+                    print(error.code)
+                }
+            
+            })
+            
         } else {
-            showErrorAlert("Email and Password required", msg: "You must enter your email and password!")
+            self.showErrorAlert("Email and Password required", msg: "You must enter your email and password!")
         }
     }
     
