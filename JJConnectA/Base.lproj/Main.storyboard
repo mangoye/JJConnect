@@ -54,6 +54,9 @@
                                                     <constraint firstAttribute="width" constant="98" id="nBw-Qt-KYp"/>
                                                 </constraints>
                                                 <state key="normal" image="Facebooklogo.png"/>
+                                                <connections>
+                                                    <action selector="fbBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PRa-Sz-afS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bt-B6-OXM">
                                                 <rect key="frame" x="0.0" y="8" width="167" height="35"/>
