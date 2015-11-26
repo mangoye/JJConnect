@@ -70,6 +70,9 @@
                                                 <state key="normal" title="Login / Signup">
                                                     <color key="titleColor" red="1" green="0.81146656032116926" blue="0.21682332324171438" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="attemptLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uUz-Zr-pHf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <animations/>
@@ -146,10 +149,34 @@
                             <constraint firstItem="CaA-Is-nLY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n6e-9M-58D"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="WPL-3S-9sz" id="EHJ-MV-dcp"/>
+                        <outlet property="passwordField" destination="3BX-yM-vS5" id="njf-po-Spd"/>
+                        <segue destination="DSd-ij-7bb" kind="show" identifier="loggedIn" id="Fgy-U3-AC5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="423" y="334"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="unp-iu-sSB">
+            <objects>
+                <viewController id="DSd-ij-7bb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y1u-wX-U97"/>
+                        <viewControllerLayoutGuide type="bottom" id="alV-GR-Wfp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4wP-f6-RKE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.1477434933" green="0.4074599303" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQA-fI-dtY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1149" y="334"/>
         </scene>
     </scenes>
     <resources>

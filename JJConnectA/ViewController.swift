@@ -11,6 +11,9 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,15 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        // Override viewDidAppear to perform a segue if a user is already logged in (if there is an active session)
+        super.viewDidAppear(animated)
+        
+        if NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) != nil {
+            self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
+        }
     }
 
     @IBAction func fbBtnPressed(sender:UIButton!) {
@@ -38,12 +50,27 @@ class ViewController: UIViewController {
                     } else {
                         print("Logged In!\(authData)")
                         NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
+                        self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                     }
-                
                 })
-
             }
         }
+    }
+    
+    @IBAction func attemptLogin(sender:UIButton!) {
+        if let email = emailField.text where email !="", let pwd = passwordField.text where pwd !="" {
+           // do something strange not implemented yet
+        } else {
+            showErrorAlert("Email and Password required", msg: "You must enter your email and password!")
+        }
+    }
+    
+    func showErrorAlert(title: String, msg: String) {
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: .Alert)
+        let action = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+        alert.addAction(action)
+        presentViewController(alert, animated: true, completion: nil)
+        
     }
 }
 
