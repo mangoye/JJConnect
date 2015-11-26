@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		AA2F0AE20F755193A514757F /* Pods_JJConnectA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DBCC9BA18671BC229FD35C /* Pods_JJConnectA.framework */; };
+		EA3119D71C079A8F008299E5 /* heart-empty.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3119D51C079A8F008299E5 /* heart-empty.png */; };
+		EA3119D81C079A8F008299E5 /* heart-full.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3119D61C079A8F008299E5 /* heart-full.png */; };
+		EA3119DF1C07A264008299E5 /* image-post.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA3119DD1C07A264008299E5 /* image-post.jpg */; };
+		EA3119E01C07A264008299E5 /* pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA3119DE1C07A264008299E5 /* pic.jpg */; };
+		EA3119E21C07AA1F008299E5 /* FeedVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3119E11C07AA1F008299E5 /* FeedVCViewController.swift */; };
+		EA3119E61C07AD6F008299E5 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3119E51C07AD6F008299E5 /* PostCell.swift */; };
 		EA6F067F1C063B1200763147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F067E1C063B1200763147 /* AppDelegate.swift */; };
 		EA6F06811C063B1200763147 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F06801C063B1200763147 /* ViewController.swift */; };
 		EA6F06841C063B1200763147 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06821C063B1200763147 /* Main.storyboard */; };
@@ -59,6 +65,12 @@
 		2FEC365085DB27EA4F157797 /* Pods-JJConnectA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJConnectA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJConnectA/Pods-JJConnectA.debug.xcconfig"; sourceTree = "<group>"; };
 		341ECF96A1007EA936352219 /* Pods-JJConnectA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJConnectA.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJConnectA/Pods-JJConnectA.release.xcconfig"; sourceTree = "<group>"; };
 		55DBCC9BA18671BC229FD35C /* Pods_JJConnectA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJConnectA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA3119D51C079A8F008299E5 /* heart-empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart-empty.png"; sourceTree = "<group>"; };
+		EA3119D61C079A8F008299E5 /* heart-full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart-full.png"; sourceTree = "<group>"; };
+		EA3119DD1C07A264008299E5 /* image-post.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image-post.jpg"; sourceTree = "<group>"; };
+		EA3119DE1C07A264008299E5 /* pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic.jpg; sourceTree = "<group>"; };
+		EA3119E11C07AA1F008299E5 /* FeedVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVCViewController.swift; sourceTree = "<group>"; };
+		EA3119E51C07AD6F008299E5 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		EA6F067B1C063B1200763147 /* JJConnectA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJConnectA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6F067E1C063B1200763147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA6F06801C063B1200763147 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -192,8 +204,8 @@
 				EA6F06AF1C063B9900763147 /* Model */,
 				EA6F06AE1C063B9000763147 /* View */,
 				EA6F06AD1C063B8100763147 /* Controller */,
-				EA6F067E1C063B1200763147 /* AppDelegate.swift */,
 				EA6F06801C063B1200763147 /* ViewController.swift */,
+				EA6F067E1C063B1200763147 /* AppDelegate.swift */,
 				EA6F06821C063B1200763147 /* Main.storyboard */,
 				EA6F06851C063B1200763147 /* Assets.xcassets */,
 				EA6F06871C063B1200763147 /* LaunchScreen.storyboard */,
@@ -223,6 +235,7 @@
 		EA6F06AD1C063B8100763147 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EA3119E11C07AA1F008299E5 /* FeedVCViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -233,6 +246,7 @@
 				EA6F06FA1C07422C00763147 /* MaterialView.swift */,
 				EA6F06FF1C0748D700763147 /* MaterialButton.swift */,
 				EA6F07011C0751AA00763147 /* MaterialTextField.swift */,
+				EA3119E51C07AD6F008299E5 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -247,6 +261,10 @@
 		EA6F06B01C063BB900763147 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EA3119DD1C07A264008299E5 /* image-post.jpg */,
+				EA3119DE1C07A264008299E5 /* pic.jpg */,
+				EA3119D51C079A8F008299E5 /* heart-empty.png */,
+				EA3119D61C079A8F008299E5 /* heart-full.png */,
 				EA6F06E21C0723DE00763147 /* logo-jjconnect.png */,
 				EA6F06E11C0723C700763147 /* icons */,
 				EA6F06DF1C06F84500763147 /* Fonts */,
@@ -448,15 +466,19 @@
 				EA6F06BA1C063DF900763147 /* icon_calendar_grey.png in Resources */,
 				EA6F06BC1C063E0E00763147 /* jju-logo267x300.png in Resources */,
 				EA6F06F91C07374800763147 /* jj-A-background10.jpg in Resources */,
+				EA3119D71C079A8F008299E5 /* heart-empty.png in Resources */,
 				EA6F06CA1C06F6A200763147 /* jju-logo-simple.png in Resources */,
 				EA6F06BE1C063E1900763147 /* starcenter.png in Resources */,
 				EA6F06861C063B1200763147 /* Assets.xcassets in Resources */,
 				EA6F06F11C07254000763147 /* jjconnect-icon-180.png in Resources */,
 				EA6F06C81C06F56D00763147 /* jj-logo-transparent.png in Resources */,
+				EA3119DF1C07A264008299E5 /* image-post.jpg in Resources */,
 				EA6F06B21C063DA300763147 /* Facebooklogo.png in Resources */,
 				EA6F06841C063B1200763147 /* Main.storyboard in Resources */,
+				EA3119E01C07A264008299E5 /* pic.jpg in Resources */,
 				EA6F06C51C06F56D00763147 /* jj-stars.png in Resources */,
 				EA6F06F01C07254000763147 /* jjconnect-icon-120.png in Resources */,
+				EA3119D81C079A8F008299E5 /* heart-full.png in Resources */,
 				EA6F06EF1C07254000763147 /* jjconnect-icon-80.png in Resources */,
 				EA6F06E31C0723DE00763147 /* logo-jjconnect.png in Resources */,
 			);
@@ -532,12 +554,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA6F07021C0751AA00763147 /* MaterialTextField.swift in Sources */,
+				EA3119E21C07AA1F008299E5 /* FeedVCViewController.swift in Sources */,
 				EAC255A01C076EAF0077EC11 /* DataService.swift in Sources */,
 				EA6F06FB1C07422C00763147 /* MaterialView.swift in Sources */,
 				EA6F06811C063B1200763147 /* ViewController.swift in Sources */,
 				EA6F067F1C063B1200763147 /* AppDelegate.swift in Sources */,
 				EA6F06FE1C0742AD00763147 /* Constants.swift in Sources */,
 				EA6F07001C0748D700763147 /* MaterialButton.swift in Sources */,
+				EA3119E61C07AD6F008299E5 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

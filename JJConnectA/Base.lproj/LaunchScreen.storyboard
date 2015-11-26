@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="System San Francisco Display Regular.ttf">
@@ -23,15 +24,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jj-A-background20.png" translatesAutoresizingMaskIntoConstraints="NO" id="f6a-Rf-HFR">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="371"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="600" id="39h-gB-Otc"/>
-                                    <constraint firstAttribute="height" constant="371" id="M0d-82-K5m"/>
-                                    <constraint firstAttribute="width" secondItem="f6a-Rf-HFR" secondAttribute="height" multiplier="600:371" id="cFD-P0-Uj1"/>
-                                </constraints>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sidney Mangoye" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y1I-He-NFX">
                                 <rect key="frame" x="20" y="564" width="560" height="16"/>
                                 <animations/>
@@ -51,12 +43,21 @@
                                     <constraint firstAttribute="width" secondItem="stc-JI-pAc" secondAttribute="height" multiplier="251:133" id="UfK-Oy-AXB"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jj-A-background20.png" translatesAutoresizingMaskIntoConstraints="NO" id="f6a-Rf-HFR">
+                                <rect key="frame" x="0.0" y="-12" width="600" height="371"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="39h-gB-Otc"/>
+                                    <constraint firstAttribute="height" constant="371" id="M0d-82-K5m"/>
+                                    <constraint firstAttribute="width" secondItem="f6a-Rf-HFR" secondAttribute="height" multiplier="600:371" id="cFD-P0-Uj1"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="f6a-Rf-HFR" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-20" id="BIU-Hs-JyY"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Y1I-He-NFX" secondAttribute="bottom" constant="20" id="GJg-lC-c1J"/>
-                            <constraint firstItem="f6a-Rf-HFR" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="K3a-8L-3ge"/>
                             <constraint firstItem="f6a-Rf-HFR" firstAttribute="leading" secondItem="Y1I-He-NFX" secondAttribute="leading" constant="-20" id="WpG-Fs-uz5"/>
                             <constraint firstItem="f6a-Rf-HFR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="grt-eD-EQ7"/>
                             <constraint firstItem="stc-JI-pAc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="lAC-s5-YeB"/>
