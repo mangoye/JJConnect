@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C47a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Exo2-Light.otf">
+            <string>Exo2-Light</string>
+        </mutableArray>
+        <mutableArray key="Exo2-Medium.otf">
+            <string>Exo2-Medium</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JJConnectA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +26,132 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jj-A-background10.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4u8-F2-qx7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CaA-Is-nLY" customClass="MaterialView" customModule="JJConnectA" customModuleProvider="target">
+                                <rect key="frame" x="132" y="87" width="336" height="298"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login / Signup" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VI4-bC-GXj">
+                                        <rect key="frame" x="90" y="103" width="154" height="28"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="LDp-ed-wZ4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Exo2-Light" family="Exo 2" pointSize="20"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Na2-U0-UTz">
+                                        <rect key="frame" x="27" y="239" width="281" height="51"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oF-Hd-Ka6">
+                                                <rect key="frame" x="175" y="7" width="98" height="37"/>
+                                                <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="98" id="nBw-Qt-KYp"/>
+                                                </constraints>
+                                                <state key="normal" image="Facebooklogo.png"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bt-B6-OXM">
+                                                <rect key="frame" x="0.0" y="8" width="167" height="35"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.1764705882" green="0.2666666667" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="ZPy-aG-BAc"/>
+                                                    <constraint firstAttribute="width" constant="167" id="h7K-Lr-fws"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Exo2-Medium" family="Exo 2" pointSize="17"/>
+                                                <state key="normal" title="Login / Signup">
+                                                    <color key="titleColor" red="1" green="0.81146656032116926" blue="0.21682332324171438" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstItem="8Bt-B6-OXM" firstAttribute="leading" secondItem="Na2-U0-UTz" secondAttribute="leading" id="IR2-3f-W8W"/>
+                                            <constraint firstItem="8Bt-B6-OXM" firstAttribute="centerX" secondItem="Na2-U0-UTz" secondAttribute="centerX" constant="-57" id="WAe-HR-lAU"/>
+                                            <constraint firstItem="3oF-Hd-Ka6" firstAttribute="trailing" secondItem="Na2-U0-UTz" secondAttribute="trailingMargin" id="cDx-Uy-H17"/>
+                                            <constraint firstItem="8Bt-B6-OXM" firstAttribute="centerY" secondItem="3oF-Hd-Ka6" secondAttribute="centerY" id="fVK-f6-QLt"/>
+                                            <constraint firstItem="8Bt-B6-OXM" firstAttribute="top" secondItem="Na2-U0-UTz" secondAttribute="topMargin" id="hct-EJ-xIJ"/>
+                                            <constraint firstItem="3oF-Hd-Ka6" firstAttribute="top" secondItem="Na2-U0-UTz" secondAttribute="top" constant="7" id="k5g-AX-sbj"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WPL-3S-9sz" customClass="MaterialTextField" customModule="JJConnectA" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="146" width="295" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="f8Q-VT-jSG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3BX-yM-vS5" customClass="MaterialTextField" customModule="JJConnectA" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="191" width="295" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="7sE-Ob-sJF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-jjconnect.png" translatesAutoresizingMaskIntoConstraints="NO" id="6eQ-v4-Cd7">
+                                        <rect key="frame" x="57" y="23" width="220" height="63"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="5aB-z9-VLp"/>
+                                            <constraint firstAttribute="height" constant="63" id="iXN-c4-UKO"/>
+                                            <constraint firstAttribute="width" secondItem="6eQ-v4-Cd7" secondAttribute="height" multiplier="220:63" id="pDZ-rg-bp9"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="336" id="0gd-QC-835"/>
+                                    <constraint firstItem="6eQ-v4-Cd7" firstAttribute="top" secondItem="CaA-Is-nLY" secondAttribute="top" constant="23" id="33e-2U-1n9"/>
+                                    <constraint firstItem="VI4-bC-GXj" firstAttribute="top" secondItem="6eQ-v4-Cd7" secondAttribute="bottom" constant="17" id="7FR-hW-kRF"/>
+                                    <constraint firstItem="VI4-bC-GXj" firstAttribute="leading" secondItem="CaA-Is-nLY" secondAttribute="leading" constant="90" id="CPe-cA-fsY"/>
+                                    <constraint firstItem="WPL-3S-9sz" firstAttribute="leading" secondItem="CaA-Is-nLY" secondAttribute="leading" constant="20" id="DUw-Y9-C9e"/>
+                                    <constraint firstItem="WPL-3S-9sz" firstAttribute="top" secondItem="VI4-bC-GXj" secondAttribute="bottom" constant="15" id="FoL-xJ-qbq"/>
+                                    <constraint firstItem="Na2-U0-UTz" firstAttribute="leading" secondItem="CaA-Is-nLY" secondAttribute="leading" constant="27" id="Hj0-nb-kYh"/>
+                                    <constraint firstItem="Na2-U0-UTz" firstAttribute="top" secondItem="3BX-yM-vS5" secondAttribute="bottom" constant="18" id="OaG-VW-G7S"/>
+                                    <constraint firstItem="6eQ-v4-Cd7" firstAttribute="centerX" secondItem="VI4-bC-GXj" secondAttribute="centerX" id="PiB-I8-l0a"/>
+                                    <constraint firstItem="VI4-bC-GXj" firstAttribute="centerX" secondItem="WPL-3S-9sz" secondAttribute="centerX" id="TJU-60-isk"/>
+                                    <constraint firstItem="Na2-U0-UTz" firstAttribute="bottom" secondItem="CaA-Is-nLY" secondAttribute="bottomMargin" id="U8g-mx-muT"/>
+                                    <constraint firstItem="3BX-yM-vS5" firstAttribute="top" secondItem="WPL-3S-9sz" secondAttribute="bottom" constant="15" id="Zpm-sn-ibf"/>
+                                    <constraint firstItem="3BX-yM-vS5" firstAttribute="centerX" secondItem="CaA-Is-nLY" secondAttribute="centerX" id="d0u-h6-RVM"/>
+                                    <constraint firstItem="Na2-U0-UTz" firstAttribute="centerX" secondItem="3BX-yM-vS5" secondAttribute="centerX" id="fLw-Ph-Rae"/>
+                                    <constraint firstItem="3BX-yM-vS5" firstAttribute="leading" secondItem="WPL-3S-9sz" secondAttribute="leading" id="jCK-2M-yS4"/>
+                                    <constraint firstItem="6eQ-v4-Cd7" firstAttribute="leading" secondItem="CaA-Is-nLY" secondAttribute="leading" constant="57" id="tMT-me-Chc"/>
+                                    <constraint firstAttribute="height" constant="298" id="uQ0-gq-W8Z"/>
+                                    <constraint firstAttribute="width" secondItem="CaA-Is-nLY" secondAttribute="height" multiplier="168:149" id="wrT-dN-X43"/>
+                                    <constraint firstItem="WPL-3S-9sz" firstAttribute="trailing" secondItem="3BX-yM-vS5" secondAttribute="trailing" id="xJN-ff-f9J"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CaA-Is-nLY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="67" id="LbL-dV-BeX"/>
+                            <constraint firstItem="4u8-F2-qx7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ow2-TG-ZDj"/>
+                            <constraint firstItem="4u8-F2-qx7" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Uvo-Xg-EGW"/>
+                            <constraint firstItem="4u8-F2-qx7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dHH-aU-TSp"/>
+                            <constraint firstAttribute="trailing" secondItem="4u8-F2-qx7" secondAttribute="trailing" id="ifz-g1-v0r"/>
+                            <constraint firstItem="CaA-Is-nLY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n6e-9M-58D"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="423" y="334"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Facebooklogo.png" width="500" height="188"/>
+        <image name="jj-A-background10.jpg" width="1020" height="1020"/>
+        <image name="logo-jjconnect.png" width="821" height="269"/>
+    </resources>
 </document>

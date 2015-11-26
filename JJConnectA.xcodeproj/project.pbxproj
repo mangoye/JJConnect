@@ -14,6 +14,23 @@
 		EA6F06891C063B1200763147 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06871C063B1200763147 /* LaunchScreen.storyboard */; };
 		EA6F06941C063B1200763147 /* JJConnectATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F06931C063B1200763147 /* JJConnectATests.swift */; };
 		EA6F069F1C063B1200763147 /* JJConnectAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F069E1C063B1200763147 /* JJConnectAUITests.swift */; };
+		EA6F06B21C063DA300763147 /* Facebooklogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06B11C063DA300763147 /* Facebooklogo.png */; };
+		EA6F06BA1C063DF900763147 /* icon_calendar_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06B91C063DF900763147 /* icon_calendar_grey.png */; };
+		EA6F06BC1C063E0E00763147 /* jju-logo267x300.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06BB1C063E0E00763147 /* jju-logo267x300.png */; };
+		EA6F06BE1C063E1900763147 /* starcenter.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06BD1C063E1900763147 /* starcenter.png */; };
+		EA6F06C51C06F56D00763147 /* jj-stars.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06C11C06F56D00763147 /* jj-stars.png */; };
+		EA6F06C81C06F56D00763147 /* jj-logo-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06C41C06F56D00763147 /* jj-logo-transparent.png */; };
+		EA6F06CA1C06F6A200763147 /* jju-logo-simple.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06C91C06F6A200763147 /* jju-logo-simple.png */; };
+		EA6F06E31C0723DE00763147 /* logo-jjconnect.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06E21C0723DE00763147 /* logo-jjconnect.png */; };
+		EA6F06EF1C07254000763147 /* jjconnect-icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06EC1C07254000763147 /* jjconnect-icon-80.png */; };
+		EA6F06F01C07254000763147 /* jjconnect-icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06ED1C07254000763147 /* jjconnect-icon-120.png */; };
+		EA6F06F11C07254000763147 /* jjconnect-icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06EE1C07254000763147 /* jjconnect-icon-180.png */; };
+		EA6F06F71C07374100763147 /* jj-A-background20.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06F61C07374100763147 /* jj-A-background20.png */; };
+		EA6F06F91C07374800763147 /* jj-A-background10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06F81C07374800763147 /* jj-A-background10.jpg */; };
+		EA6F06FB1C07422C00763147 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F06FA1C07422C00763147 /* MaterialView.swift */; };
+		EA6F06FE1C0742AD00763147 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F06FD1C0742AD00763147 /* Constants.swift */; };
+		EA6F07001C0748D700763147 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F06FF1C0748D700763147 /* MaterialButton.swift */; };
+		EA6F07021C0751AA00763147 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F07011C0751AA00763147 /* MaterialTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +64,42 @@
 		EA6F069A1C063B1200763147 /* JJConnectAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JJConnectAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6F069E1C063B1200763147 /* JJConnectAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JJConnectAUITests.swift; sourceTree = "<group>"; };
 		EA6F06A01C063B1200763147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA6F06B11C063DA300763147 /* Facebooklogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebooklogo.png; sourceTree = "<group>"; };
+		EA6F06B91C063DF900763147 /* icon_calendar_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_calendar_grey.png; sourceTree = "<group>"; };
+		EA6F06BB1C063E0E00763147 /* jju-logo267x300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jju-logo267x300.png"; sourceTree = "<group>"; };
+		EA6F06BD1C063E1900763147 /* starcenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starcenter.png; sourceTree = "<group>"; };
+		EA6F06C11C06F56D00763147 /* jj-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jj-stars.png"; sourceTree = "<group>"; };
+		EA6F06C41C06F56D00763147 /* jj-logo-transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jj-logo-transparent.png"; sourceTree = "<group>"; };
+		EA6F06C91C06F6A200763147 /* jju-logo-simple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jju-logo-simple.png"; sourceTree = "<group>"; };
+		EA6F06CB1C06F80B00763147 /* Exo2-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraLight.otf"; sourceTree = "<group>"; };
+		EA6F06CC1C06F80B00763147 /* Exo2-ExtraLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraLightItalic.otf"; sourceTree = "<group>"; };
+		EA6F06CD1C06F80B00763147 /* Exo2-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Italic.otf"; sourceTree = "<group>"; };
+		EA6F06CE1C06F80B00763147 /* Exo2-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Light.otf"; sourceTree = "<group>"; };
+		EA6F06CF1C06F80B00763147 /* Exo2-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-LightItalic.otf"; sourceTree = "<group>"; };
+		EA6F06D01C06F80B00763147 /* Exo2-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Medium.otf"; sourceTree = "<group>"; };
+		EA6F06D11C06F80B00763147 /* Exo2-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-MediumItalic.otf"; sourceTree = "<group>"; };
+		EA6F06D21C06F80B00763147 /* Exo2-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Regular.otf"; sourceTree = "<group>"; };
+		EA6F06D31C06F82700763147 /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		EA6F06D41C06F82700763147 /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
+		EA6F06D51C06F82700763147 /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = "<group>"; };
+		EA6F06D61C06F82700763147 /* Lato-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		EA6F06D71C06F82700763147 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		EA6F06D81C06F82700763147 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		EA6F06D91C06F82700763147 /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = "<group>"; };
+		EA6F06DA1C06F83600763147 /* System San Francisco Display Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Bold.ttf"; sourceTree = "<group>"; };
+		EA6F06DB1C06F83600763147 /* System San Francisco Display Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Regular.ttf"; sourceTree = "<group>"; };
+		EA6F06DC1C06F83600763147 /* System San Francisco Display Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Thin.ttf"; sourceTree = "<group>"; };
+		EA6F06DD1C06F83600763147 /* System San Francisco Display Ultralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Ultralight.ttf"; sourceTree = "<group>"; };
+		EA6F06E21C0723DE00763147 /* logo-jjconnect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-jjconnect.png"; sourceTree = "<group>"; };
+		EA6F06EC1C07254000763147 /* jjconnect-icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jjconnect-icon-80.png"; sourceTree = "<group>"; };
+		EA6F06ED1C07254000763147 /* jjconnect-icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jjconnect-icon-120.png"; sourceTree = "<group>"; };
+		EA6F06EE1C07254000763147 /* jjconnect-icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jjconnect-icon-180.png"; sourceTree = "<group>"; };
+		EA6F06F61C07374100763147 /* jj-A-background20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jj-A-background20.png"; sourceTree = "<group>"; };
+		EA6F06F81C07374800763147 /* jj-A-background10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jj-A-background10.jpg"; sourceTree = "<group>"; };
+		EA6F06FA1C07422C00763147 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		EA6F06FD1C0742AD00763147 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EA6F06FF1C0748D700763147 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		EA6F07011C0751AA00763147 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +150,11 @@
 		EA6F067D1C063B1200763147 /* JJConnectA */ = {
 			isa = PBXGroup;
 			children = (
+				EA6F06FC1C07428100763147 /* Util */,
+				EA6F06B01C063BB900763147 /* Resources */,
+				EA6F06AF1C063B9900763147 /* Model */,
+				EA6F06AE1C063B9000763147 /* View */,
+				EA6F06AD1C063B8100763147 /* Controller */,
 				EA6F067E1C063B1200763147 /* AppDelegate.swift */,
 				EA6F06801C063B1200763147 /* ViewController.swift */,
 				EA6F06821C063B1200763147 /* Main.storyboard */,
@@ -123,6 +181,101 @@
 				EA6F06A01C063B1200763147 /* Info.plist */,
 			);
 			path = JJConnectAUITests;
+			sourceTree = "<group>";
+		};
+		EA6F06AD1C063B8100763147 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EA6F06AE1C063B9000763147 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA6F06FA1C07422C00763147 /* MaterialView.swift */,
+				EA6F06FF1C0748D700763147 /* MaterialButton.swift */,
+				EA6F07011C0751AA00763147 /* MaterialTextField.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EA6F06AF1C063B9900763147 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EA6F06B01C063BB900763147 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA6F06E21C0723DE00763147 /* logo-jjconnect.png */,
+				EA6F06E11C0723C700763147 /* icons */,
+				EA6F06DF1C06F84500763147 /* Fonts */,
+				EA6F06E01C06F85000763147 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EA6F06DF1C06F84500763147 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EA6F06DA1C06F83600763147 /* System San Francisco Display Bold.ttf */,
+				EA6F06DB1C06F83600763147 /* System San Francisco Display Regular.ttf */,
+				EA6F06DC1C06F83600763147 /* System San Francisco Display Thin.ttf */,
+				EA6F06DD1C06F83600763147 /* System San Francisco Display Ultralight.ttf */,
+				EA6F06D31C06F82700763147 /* Lato-Hairline.ttf */,
+				EA6F06D41C06F82700763147 /* Lato-HairlineItalic.ttf */,
+				EA6F06D51C06F82700763147 /* Lato-Heavy.ttf */,
+				EA6F06D61C06F82700763147 /* Lato-HeavyItalic.ttf */,
+				EA6F06D71C06F82700763147 /* Lato-Light.ttf */,
+				EA6F06D81C06F82700763147 /* Lato-LightItalic.ttf */,
+				EA6F06D91C06F82700763147 /* Lato-Medium.ttf */,
+				EA6F06CB1C06F80B00763147 /* Exo2-ExtraLight.otf */,
+				EA6F06CC1C06F80B00763147 /* Exo2-ExtraLightItalic.otf */,
+				EA6F06CD1C06F80B00763147 /* Exo2-Italic.otf */,
+				EA6F06CE1C06F80B00763147 /* Exo2-Light.otf */,
+				EA6F06CF1C06F80B00763147 /* Exo2-LightItalic.otf */,
+				EA6F06D01C06F80B00763147 /* Exo2-Medium.otf */,
+				EA6F06D11C06F80B00763147 /* Exo2-MediumItalic.otf */,
+				EA6F06D21C06F80B00763147 /* Exo2-Regular.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		EA6F06E01C06F85000763147 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EA6F06F81C07374800763147 /* jj-A-background10.jpg */,
+				EA6F06F61C07374100763147 /* jj-A-background20.png */,
+				EA6F06C91C06F6A200763147 /* jju-logo-simple.png */,
+				EA6F06C11C06F56D00763147 /* jj-stars.png */,
+				EA6F06C41C06F56D00763147 /* jj-logo-transparent.png */,
+				EA6F06BD1C063E1900763147 /* starcenter.png */,
+				EA6F06BB1C063E0E00763147 /* jju-logo267x300.png */,
+				EA6F06B91C063DF900763147 /* icon_calendar_grey.png */,
+				EA6F06B11C063DA300763147 /* Facebooklogo.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		EA6F06E11C0723C700763147 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				EA6F06EC1C07254000763147 /* jjconnect-icon-80.png */,
+				EA6F06ED1C07254000763147 /* jjconnect-icon-120.png */,
+				EA6F06EE1C07254000763147 /* jjconnect-icon-180.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		EA6F06FC1C07428100763147 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EA6F06FD1C0742AD00763147 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +386,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA6F06891C063B1200763147 /* LaunchScreen.storyboard in Resources */,
+				EA6F06F71C07374100763147 /* jj-A-background20.png in Resources */,
+				EA6F06BA1C063DF900763147 /* icon_calendar_grey.png in Resources */,
+				EA6F06BC1C063E0E00763147 /* jju-logo267x300.png in Resources */,
+				EA6F06F91C07374800763147 /* jj-A-background10.jpg in Resources */,
+				EA6F06CA1C06F6A200763147 /* jju-logo-simple.png in Resources */,
+				EA6F06BE1C063E1900763147 /* starcenter.png in Resources */,
 				EA6F06861C063B1200763147 /* Assets.xcassets in Resources */,
+				EA6F06F11C07254000763147 /* jjconnect-icon-180.png in Resources */,
+				EA6F06C81C06F56D00763147 /* jj-logo-transparent.png in Resources */,
+				EA6F06B21C063DA300763147 /* Facebooklogo.png in Resources */,
 				EA6F06841C063B1200763147 /* Main.storyboard in Resources */,
+				EA6F06C51C06F56D00763147 /* jj-stars.png in Resources */,
+				EA6F06F01C07254000763147 /* jjconnect-icon-120.png in Resources */,
+				EA6F06EF1C07254000763147 /* jjconnect-icon-80.png in Resources */,
+				EA6F06E31C0723DE00763147 /* logo-jjconnect.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +425,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA6F07021C0751AA00763147 /* MaterialTextField.swift in Sources */,
+				EA6F06FB1C07422C00763147 /* MaterialView.swift in Sources */,
 				EA6F06811C063B1200763147 /* ViewController.swift in Sources */,
 				EA6F067F1C063B1200763147 /* AppDelegate.swift in Sources */,
+				EA6F06FE1C0742AD00763147 /* Constants.swift in Sources */,
+				EA6F07001C0748D700763147 /* MaterialButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
