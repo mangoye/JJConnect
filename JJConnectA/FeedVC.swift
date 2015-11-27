@@ -18,6 +18,15 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         
+        // We must listen the database to know if there is new data available
+        // .Value = whenever a data is changed... this is the event we want to listen: anydata, anychildren... it will update the view
+        
+        DataService.ds.REF_POSTS.observeEventType(.Value, withBlock: { snapshot in
+            // This code will be executed only if a data changes
+            // This function will "DOWNLOAD THE DATA".. (NO NETWORK STUFFS NEED - The changes are made in REAL TIME)
+            print(snapshot.value)
+        })
+        
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
