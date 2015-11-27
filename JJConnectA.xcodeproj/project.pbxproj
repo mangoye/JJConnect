@@ -14,6 +14,7 @@
 		EA3119E01C07A264008299E5 /* pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA3119DE1C07A264008299E5 /* pic.jpg */; };
 		EA3119E61C07AD6F008299E5 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3119E51C07AD6F008299E5 /* PostCell.swift */; };
 		EA3119E81C07C513008299E5 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3119E71C07C513008299E5 /* FeedVC.swift */; };
+		EA3119EA1C088F1E008299E5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3119E91C088F1E008299E5 /* Post.swift */; };
 		EA6F067F1C063B1200763147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F067E1C063B1200763147 /* AppDelegate.swift */; };
 		EA6F06811C063B1200763147 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F06801C063B1200763147 /* ViewController.swift */; };
 		EA6F06841C063B1200763147 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06821C063B1200763147 /* Main.storyboard */; };
@@ -71,6 +72,7 @@
 		EA3119DE1C07A264008299E5 /* pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic.jpg; sourceTree = "<group>"; };
 		EA3119E51C07AD6F008299E5 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		EA3119E71C07C513008299E5 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		EA3119E91C088F1E008299E5 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		EA6F067B1C063B1200763147 /* JJConnectA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJConnectA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6F067E1C063B1200763147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA6F06801C063B1200763147 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 		EA6F06AF1C063B9900763147 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EA3119E91C088F1E008299E5 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 				EA6F06FE1C0742AD00763147 /* Constants.swift in Sources */,
 				EA6F07001C0748D700763147 /* MaterialButton.swift in Sources */,
 				EA3119E61C07AD6F008299E5 /* PostCell.swift in Sources */,
+				EA3119EA1C088F1E008299E5 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
