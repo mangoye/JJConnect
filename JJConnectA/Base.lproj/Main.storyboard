@@ -191,7 +191,7 @@
         <!--FeedVC-->
         <scene sceneID="Myj-0m-BqX">
             <objects>
-                <viewController id="OnO-95-gmQ" customClass="FeedVC" customModule="devslopes_showcase" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OnO-95-gmQ" customClass="FeedVC" customModule="JJConnectA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iGX-3m-TMf"/>
                         <viewControllerLayoutGuide type="bottom" id="ZIx-zg-U3e"/>
@@ -205,14 +205,14 @@
                                 <animations/>
                                 <color key="backgroundColor" white="0.87854646380000001" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="358" id="gDr-7A-U1U" customClass="PostCell" customModule="devslopes_showcase" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="358" id="gDr-7A-U1U" customClass="PostCell" customModule="JJConnectA" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="560" height="358"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gDr-7A-U1U" id="7n3-BG-X0F">
                                             <rect key="frame" x="0.0" y="0.0" width="560" height="358"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PQG-ck-PRx" userLabel="Container" customClass="MaterialView" customModule="devslopes_showcase" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PQG-ck-PRx" userLabel="Container" customClass="MaterialView" customModule="JJConnectA" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="8" width="560" height="341"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PDr-KW-eos">
@@ -230,28 +230,28 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="demonslayer31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="3gm-Aa-1Zg">
-                                                                            <rect key="frame" x="60" y="0.0" width="92" height="50"/>
+                                                                            <rect key="frame" x="60" y="0.0" width="86" height="50"/>
                                                                             <animations/>
                                                                             <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="17"/>
                                                                             <color key="textColor" red="0.95686274510000002" green="0.31764705879999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="heart-empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="quq-wS-EFM">
-                                                                            <rect key="frame" x="162" y="0.0" width="107" height="50"/>
+                                                                            <rect key="frame" x="156" y="0.0" width="110" height="50"/>
                                                                             <animations/>
                                                                         </imageView>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nuX-xJ-9bO">
-                                                                            <rect key="frame" x="279" y="0.0" width="41" height="50"/>
+                                                                            <rect key="frame" x="276" y="0.0" width="44" height="50"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1444" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shf-hX-dXh">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="41" height="24"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="44" height="20"/>
                                                                                     <animations/>
                                                                                     <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="17"/>
                                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Likes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKD-GS-SpH">
-                                                                                    <rect key="frame" x="0.0" y="24" width="41" height="26"/>
+                                                                                    <rect key="frame" x="0.0" y="20" width="44" height="30"/>
                                                                                     <animations/>
                                                                                     <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="17"/>
                                                                                     <color key="textColor" white="0.87854646380000001" alpha="1" colorSpace="calibratedWhite"/>
@@ -328,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TV7-DD-NgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2023" y="-47"/>
+            <point key="canvasLocation" x="1941" y="334"/>
         </scene>
     </scenes>
     <resources>
