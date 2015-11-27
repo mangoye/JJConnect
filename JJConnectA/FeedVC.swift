@@ -37,15 +37,12 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                         let key = snap.key
                         let post = Post(postKey: key, dictionary: postDict)
                         self.posts.append(post)
-                        
                     }
                 }
             }
             
-            
             self.tableView.reloadData()
         })
-        
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -58,11 +55,13 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let post = posts[indexPath.row]
-        print(post.postDescription)
         
-        return tableView.dequeueReusableCellWithIdentifier("PostCell") as! PostCell
-        
-    }
-    
-    
+        if let cell = tableView.dequeueReusableCellWithIdentifier("Postcell") as? PostCell {
+            cell.configureCell(post)
+            return cell
+        }
+        else {
+            return PostCell()
+         }
+     }
 }

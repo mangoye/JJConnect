@@ -305,7 +305,9 @@
                                         <animations/>
                                         <color key="backgroundColor" white="0.87854646380000001" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="profileImg" destination="cdo-sU-z60" id="pxe-VJ-6g0"/>
+                                            <outlet property="descriptionText" destination="0jO-EH-2Bh" id="2pN-sj-has"/>
+                                            <outlet property="likesLbl" destination="Shf-hX-dXh" id="bB6-LF-1GL"/>
+                                            <outlet property="profileImg" destination="cdo-sU-z60" id="zu8-EP-T5R"/>
                                             <outlet property="showcaseImg" destination="aKT-Vv-axY" id="8rm-AH-Kgl"/>
                                         </connections>
                                     </tableViewCell>
