@@ -18,37 +18,38 @@ class Post {
     var postDescription: String {
         return _postDescription
     }
+    
     var imageUrl: String? {
         return _imageUrl
     }
+    
     var likes: Int {
         return _likes
     }
+    
     var username: String {
         return _username
     }
-    var postKey: String{
-        return _postKey
-    }
     
-    init(description:String, imageUrl: String?, username: String) {
+    init(description: String, imageUrl: String?, username: String) {
         self._postDescription = description
         self._imageUrl = imageUrl
         self._username = username
     }
     
-    // Create a new post object when we retrieve data from Firebase
     init(postKey: String, dictionary: Dictionary<String, AnyObject>) {
         self._postKey = postKey
+        
         if let likes = dictionary["likes"] as? Int {
             self._likes = likes
         }
-        if let imageUrl = dictionary["imageUrl"] as? String {
-            self._imageUrl = imageUrl
+        
+        if let imgUrl = dictionary["imageUrl"] as? String {
+            self._imageUrl = imgUrl
         }
+        
         if let desc = dictionary["description"] as? String {
             self._postDescription = desc
         }
     }
-    
 }

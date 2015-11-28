@@ -13,6 +13,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     var posts = [Post]()
+    static var imageCache = NSCache()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,29 +21,30 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         
-        // We must listen the database to know if there is new data available
-        // .Value = whenever a data is changed... this is the event we want to listen: anydata, anychildren... it will update the view
+        tableView.estimatedRowHeight = 358
         
         DataService.ds.REF_POSTS.observeEventType(.Value, withBlock: { snapshot in
-            // This code will be executed only if a data changes
-            // This function will "DOWNLOAD THE DATA".. (NO NETWORK STUFFS NEED - The changes are made in REAL TIME)
             print(snapshot.value)
+            
             self.posts = []
-
-            // Here we will parse the data retrieved - get all the snapshot array as FDataSnapshot
             if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
+                
                 for snap in snapshots {
                     print("SNAP: \(snap)")
+                    
                     if let postDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
                         let post = Post(postKey: key, dictionary: postDict)
                         self.posts.append(post)
                     }
+                    
                 }
+                
             }
             
             self.tableView.reloadData()
         })
+        
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -54,14 +56,37 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let post = posts[indexPath.row]
         
-        if let cell = tableView.dequeueReusableCellWithIdentifier("Postcell") as? PostCell {
-            cell.configureCell(post)
+        if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
+            
+            cell.request?.cancel()
+            
+            var img: UIImage?
+            
+            if let url = post.imageUrl {
+                img = FeedVC.imageCache.objectForKey(url) as? UIImage
+            }
+            
+            cell.configureCell(post, img: img)
+            
             return cell
-        }
-        else {
+        } else {
             return PostCell()
-         }
-     }
+        }
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        
+        let post = posts[indexPath.row]
+        
+        if post.imageUrl == nil {
+            return 150
+        } else {
+            return tableView.estimatedRowHeight
+        }
+    }
+    
 }
+
