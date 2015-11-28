@@ -205,7 +205,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="0.87854646380000001" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" id="gDr-7A-U1U" customClass="PostCell" customModule="JJConnectA" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" id="gDr-7A-U1U" customClass="PostCell" customModule="JJConnectA" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="560" height="358"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gDr-7A-U1U" id="7n3-BG-X0F">

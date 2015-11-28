@@ -42,7 +42,7 @@ class PostCell: UITableViewCell {
                 self.showcaseImg.image = img
             } else {
                 // Use Alamofire to download the picture
-                request = Alamofire.request(.GET, post.imageUrl!).response(completionHandler: { request, response, data, err in
+                request = Alamofire.request(.GET, post.imageUrl!).validate(contentType:["image/*"]).response(completionHandler: { request, response, data, err in
                     
                     if err == nil {
                         let img = UIImage(data: data!)!
