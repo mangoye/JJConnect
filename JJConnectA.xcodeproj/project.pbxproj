@@ -15,6 +15,8 @@
 		EA3119E61C07AD6F008299E5 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3119E51C07AD6F008299E5 /* PostCell.swift */; };
 		EA3119E81C07C513008299E5 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3119E71C07C513008299E5 /* FeedVC.swift */; };
 		EA3119EA1C088F1E008299E5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3119E91C088F1E008299E5 /* Post.swift */; };
+		EA607C771C098EBE00526471 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = EA607C761C098EBE00526471 /* camera.png */; };
+		EA607C791C0992CE00526471 /* bar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA607C781C0992CE00526471 /* bar.jpg */; };
 		EA6F067F1C063B1200763147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F067E1C063B1200763147 /* AppDelegate.swift */; };
 		EA6F06811C063B1200763147 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6F06801C063B1200763147 /* ViewController.swift */; };
 		EA6F06841C063B1200763147 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6F06821C063B1200763147 /* Main.storyboard */; };
@@ -73,6 +75,8 @@
 		EA3119E51C07AD6F008299E5 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		EA3119E71C07C513008299E5 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		EA3119E91C088F1E008299E5 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EA607C761C098EBE00526471 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		EA607C781C0992CE00526471 /* bar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bar.jpg; sourceTree = "<group>"; };
 		EA6F067B1C063B1200763147 /* JJConnectA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJConnectA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6F067E1C063B1200763147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA6F06801C063B1200763147 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -264,6 +268,8 @@
 		EA6F06B01C063BB900763147 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EA607C781C0992CE00526471 /* bar.jpg */,
+				EA607C761C098EBE00526471 /* camera.png */,
 				EA3119DD1C07A264008299E5 /* image-post.jpg */,
 				EA3119DE1C07A264008299E5 /* pic.jpg */,
 				EA3119D51C079A8F008299E5 /* heart-empty.png */,
@@ -465,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA6F06891C063B1200763147 /* LaunchScreen.storyboard in Resources */,
+				EA607C771C098EBE00526471 /* camera.png in Resources */,
 				EA6F06F71C07374100763147 /* jj-A-background20.png in Resources */,
 				EA6F06BA1C063DF900763147 /* icon_calendar_grey.png in Resources */,
 				EA6F06BC1C063E0E00763147 /* jju-logo267x300.png in Resources */,
@@ -472,6 +479,7 @@
 				EA3119D71C079A8F008299E5 /* heart-empty.png in Resources */,
 				EA6F06CA1C06F6A200763147 /* jju-logo-simple.png in Resources */,
 				EA6F06BE1C063E1900763147 /* starcenter.png in Resources */,
+				EA607C791C0992CE00526471 /* bar.jpg in Resources */,
 				EA6F06861C063B1200763147 /* Assets.xcassets in Resources */,
 				EA6F06F11C07254000763147 /* jjconnect-icon-180.png in Resources */,
 				EA6F06C81C06F56D00763147 /* jj-logo-transparent.png in Resources */,
