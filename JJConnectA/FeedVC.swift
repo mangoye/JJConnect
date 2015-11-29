@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import Alamofire
 
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -104,8 +105,52 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     @IBAction func selectImage(sender: UITapGestureRecognizer) {
         presentViewController(imagePicker, animated: true, completion: nil)
     }
+    
+    
     @IBAction func makePost(sender: AnyObject) {
+        if let txt = postField.text where txt != "" {
+            if let img = imageSelectorImage.image where img != "camera.png" {
+                let urlStr = "https://post.imageshack.us/upload_api.php"
+                let url = NSURL(string: urlStr)!
+                
+                // Transform the picture in compressed jpeg DATA that we will send via Alamofire send request. Alamofire cannot send image via http, unless it is in NSDATA format / Here our cloud storage provider cannot also receive picture directly, it must be a data json format
+                let imgData = UIImageJPEGRepresentation(img, 0.2)!
+                
+                // This is the key provided by ImageHack Api, our cloud storage service provider. with .dataUsingEncoding function we reencode this string in data that we can send via HTTP request. All value must be unwrapped
+                let keyData = "2389CGLY6f66923e774d49e602bf4f6a945ba8fa".dataUsingEncoding(NSUTF8StringEncoding)!
+                
+                let keyJSON = "json".dataUsingEncoding(NSUTF8StringEncoding)!
+                
+                // Send the data with a http's .POST with an Alamofire function/ .Success and .Failure are part of the Alamofire framework
+                
+                Alamofire.upload(.POST, url, multipartFormData: { multipartFormData in
+                    
+                    multipartFormData.appendBodyPart(data: imgData, name: "fileupload", fileName:"image", mimeType: "image/jpg")
+                    multipartFormData.appendBodyPart(data: keyData, name: "key")
+                    multipartFormData.appendBodyPart(data: keyJSON, name: "format")
+                    
+                    }) {encodingResult in
+                        switch encodingResult {
+                        case .Success(let upload, _, _):
+                            upload.responseJSON(completionHandler: { response in
+                                if let info = response.result.value as? Dictionary<String,AnyObject> {
+                                    if let links = info["links"] as? Dictionary<String,AnyObject> {
+                                        if let imageLink = links["image_link"] as? String {
+                                            print("LINK: \(imageLink)")
+                                        }
+                                    }
+                                }
+                            })
+                        case.Failure(let error):
+                            print(error)
+                        }
+                
+                }
+            }
 
+        }
     }
-}
 
+
+
+}
